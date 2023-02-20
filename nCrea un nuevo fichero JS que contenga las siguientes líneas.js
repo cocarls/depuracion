@@ -1,0 +1,11 @@
+// Una función que admita un parámetro "num", y devuelva una lista con esa cantidad de números de la secuencia de Fibonacci (Por ejemplo: num = 6 => Resultado [1, 1, 2, 3, 5, 8])
+
+// - Ejecuta la depuración de VSCode para visualizar la ejecución de la función
+
+function fibonacci(num) {
+  let fibArr = [1, 1];
+  for (let i = 2; i < num; i++) {
+    fibArr[i] = fibArr[i - 1] + fibArr[i - 2];
+  }
+  console.log(fibArr);
+}
